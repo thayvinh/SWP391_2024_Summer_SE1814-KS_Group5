@@ -37,6 +37,7 @@
 							<div class="button button_2 trans_200"><a href="#">Send</a></div>
 							<div class="button button_3 trans_200"><a href="#">Send</a></div>
 							<div class="button button_4"><a href="#">Send</a></div>
+                                                        <div class="button button_4"><a href="#">Send</a></div>
 						</div>
 					</div>
 
