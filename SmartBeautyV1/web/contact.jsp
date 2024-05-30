@@ -12,7 +12,6 @@
         <link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
     </head>
     <body>
-        <!-- test git dubfbj -->
         <div class="super_container">
             <!-- Header -->
             <jsp:include page="include/header.jsp"></jsp:include>
