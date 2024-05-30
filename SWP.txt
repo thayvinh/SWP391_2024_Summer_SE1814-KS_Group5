@@ -1,0 +1,109 @@
+SWP project 
++ role(nvarchar(Max)):
+                        Customer (Khách hàng) 
+                        Employee (Nhân viên ):
+                                              PT 
+                                              TakeCare
+                        Manage   (Quản lí )
+                        Director (Giám đốc)
+1.Requiment : 
+-về weeb gym (smart beauty)  
+
+-Mục tiêu: 
++ Cung cấp kiến thức(Blog) thông tin về gym cho mọi người (dinh dưỡng , chế độ tập luyện):
+*Viết và chia sẻ các bài viết về dinh dưỡng, chế độ ăn uống phù hợp cho người tập gym.
+*Cung cấp các bài tập và chế độ tập luyện cho từng mục tiêu cụ thể (giảm cân, tăng cơ, cải thiện sức khỏe).
+*Chia sẻ các câu chuyện thành công và kinh nghiệm của những người đã đạt được mục tiêu gym của họ.
+
++ Cung cấp các dịch vụ về tập gym (Đăng kí dịch vụ):
+*Tạo ra một hệ thống đăng ký các gói tập luyện (tháng, quý, năm).
+*Đề xuất các gói tập luyện cá nhân hóa dựa trên mục tiêu và tình trạng hiện tại của khách hàng.
+*Cung cấp dịch vụ tư vấn trực tuyến với các huấn luyện viên chuyên nghiệp.
+
++ Cung cấp thông tin về phong gym(cơ sở vật chất, con người) (nhỏ)
+*Giới thiệu chi tiết về cơ sở vật chất của phòng gym, bao gồm trang thiết bị, không gian tập luyện.
+*Thông tin về đội ngũ huấn luyện viên, nhân viên của phòng gym.
+*Lịch làm việc, các sự kiện và chương trình khuyến mãi của phòng gym.
+
+- Phân tích:
++
++
++
++
+
+
+2. Database 
+-Account: 
++ account_id(int indentity)(Khóa Chính)
++ username(nvarchar(Max))
++ password(nvarchar(Max))
++ email(nvarchar(Max))
++ phonenumber(nvarchar(Max))                                                                               
++ status(bit) 
+
+- Employee:
++ employee_id(int) khóa chính
++ account_id(int indentity)(Khóa ngoại của Account)
++ fullname(nvarchar(Max))
++ gender(nvarchar(Max))
++ email(nvarchar(Max))
++ phonenumber(nvarchar(Max))   
++ address(nvarchar(Max))
++ hiredate(date)
++ salary(float)
++ job_id(int) khóa ngoại bảng Job                                                                        
++ status(bit) 
++ manager_id(int) (Khóa ngoại của Employee)
+
+-Job:
++job_id(int) khóa chính
++job_name(nvarchar(Max))   
+
+- Slot:
++ slot_id(int) (primarykey)
++ starttime(time)
++ endtime(time)  
+
+- Service:
++ service_id(int) primarykey
++ description(nvarchar(Max)): note---------
++ Price(float)
+ 
+- Sale:
++ sale_id(int) primarykey
++ value(int) 
++ name(nvarchar(Max))      
+
+-Blog 
++ blog_id(int) primarykey 
++ blog_name(nvarchar(Max)) 
++ description(nvarchar(Max))
++ date(date)
++ content(nvarchar(Max))
+
+
+-Equipment:
++ equipment_id (int) primarykey
++ equipment_name (nvarchar(Max))
++ type_id(int) foreign key of TypeOfEquipment
++ price(float)
++ supplier_id(int) foreign key
++ quantity(int)
++ status(int)
++ description(nvarchar(Max))
+
+-TypeOfEquipment:
++ type_id(int) primarykey
++ name(nvarchar(Max))
+
+-Supplier
++ supplier_id(int) 
++ supplier_name(nvarchar(Max))
++ address(nvarchar(Max))
++ phonenumber(nvarchar(Max))
++ email(nvarchar(Max))
+
+-Feedback:
++ account_id(int) foreign key of Account
++ descripton(nvarchar(Max))
+
