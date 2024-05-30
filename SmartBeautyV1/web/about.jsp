@@ -36,6 +36,7 @@
                                 <div class="about_content">
                                     <div class="section_title_container">
                                         <div class="section_subtitle">welcome to sportfit</div>
+                                         <div class="section_subtitle">welcome to sportfit</div>
                                         <div class="section_title">About <span>Sportfit</span></div>
                                     </div>
                                     <div class="text_highlight">Etiam commodo justo nec aliquam feugiat. Donec a leo eget eget augue porttitor sollicitudin augue porttitor sollicitudin.</div>
