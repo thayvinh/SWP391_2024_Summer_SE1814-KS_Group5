@@ -31,6 +31,7 @@
                         <div class="col">
                             <div class="section_title_container">
                                 <div class="section_subtitle">welcome to sportfit</div>
+                                <div class="section_subtitle">welcome to sportfit</div>
                                 <div class="section_title">The Blog</div>
                             </div>
                         </div>
