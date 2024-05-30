@@ -1,6 +1,7 @@
 <%-- dat --%>
 <%-- dat2 --%>
 <!DOCTYPE html>
+<!-- Header -->
 <html lang="en">
     <head>
         <title>About us</title>
