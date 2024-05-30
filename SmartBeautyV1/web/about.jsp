@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Header --><!-- Header -->
+<!-- Header -->
 <html lang="en">
     <head>
         <title>About us</title>
